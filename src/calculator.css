@@ -1,0 +1,64 @@
+/* src/Calculator.css */
+.calculator {
+    width: 350px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+}
+
+.input {
+    font-size: 1.5em;
+    overflow: hidden;
+}
+
+.result {
+    font-size: 1.2em;
+    color: #0f0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+.buttons button {
+    border: none;
+    background: #eee;
+    padding: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buttons button:hover {
+    background: #ddd;
+}
+
+.buttons button:active {
+    background: #ccc;
+}
+
+.buttons button:nth-child(4n) {
+    background: #f90;
+    color: #fff;
+}
+
+.buttons button:nth-child(4n):hover {
+    background: #e80;
+}
+
+.buttons button:nth-child(4n):active {
+    background: #d70;
+}
